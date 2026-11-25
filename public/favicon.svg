@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#0A0D12" stroke="#D49B37" stroke-width="2.5" />
+  <circle cx="32" cy="32" r="26" fill="url(#grad)" stroke="#992B15" stroke-width="1.5" />
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1510" />
+      <stop offset="100%" stop-color="#0A0D12" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8DA96" />
+      <stop offset="50%" stop-color="#D49B37" />
+      <stop offset="100%" stop-color="#992B15" />
+    </linearGradient>
+  </defs>
+  <!-- Stylized Royal Bhoj Monogram "ভ" -->
+  <text x="32" y="42" font-family="Georgia, serif" font-size="28" font-weight="900" fill="url(#goldGrad)" text-anchor="middle">ভ</text>
+  <circle cx="32" cy="14" r="2.5" fill="#F8DA96" />
+  <circle cx="14" cy="32" r="1.5" fill="#D49B37" />
+  <circle cx="50" cy="32" r="1.5" fill="#D49B37" />
+</svg>

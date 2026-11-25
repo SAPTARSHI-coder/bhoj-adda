@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --terracotta-900: #5C1905;
+  --terracotta-800: #7A2207;
+  --terracotta-700: #992B15;
+  --terracotta-600: #B83A1B;
+  --terracotta-500: #D84D29;
+  --terracotta-100: #FBECE8;
+  --terracotta-50: #FDF6F4;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --gold-900: #68480C;
+  --gold-800: #8C6212;
+  --gold-700: #B27D1B;
+  --gold-600: #D49B37;
+  --gold-500: #E5AC46;
+  --gold-400: #F3C367;
+  --gold-300: #F8DA96;
+  --gold-100: #FDF4E1;
+  --gold-50: #FFFAEE;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --dark-950: #0A0D12;
+  --dark-900: #10151E;
+  --dark-850: #151C27;
+  --dark-800: #1D2635;
+  --dark-700: #293548;
+
+  --cream-50: #FCFAF7;
+  --cream-100: #F7F3EB;
+  --cream-200: #EEE5D5;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A0D12;
+  color: #FCFAF7;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0D12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B27D1B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D49B37;
+}
+
+/* Gold Gradient utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F8DA96 0%, #D49B37 50%, #B27D1B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-terracotta-gradient {
+  background: linear-gradient(135deg, #F87171 0%, #EA580C 50%, #992B15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F3C367 0%, #D49B37 50%, #B27D1B 100%);
+}
+
+.bg-terracotta-gradient {
+  background: linear-gradient(135deg, #D84D29 0%, #B83A1B 50%, #7A2207 100%);
+}
+
+.bg-dark-card {
+  background: radial-gradient(circle at top left, #1B2330 0%, #10151E 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 155, 55, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 155, 55, 0.6);
+  box-shadow: 0 0 15px rgba(212, 155, 55, 0.2);
+}
+
+/* Subtle Alpona Motif Pattern background */
+.bg-alpona-pattern {
+  background-color: #0A0D12;
+  background-image: radial-gradient(rgba(212, 155, 55, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism */
+.glass-dark {
+  background: rgba(16, 21, 30, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
